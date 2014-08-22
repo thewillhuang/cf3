@@ -10,6 +10,8 @@
 
 var app = app || {};
 
+
 $(function() {
-    new app.LibraryView();
+	$( '#releaseDate' ).datepicker();
+	new app.LibraryView();
 });
