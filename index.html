@@ -27,7 +27,7 @@
                 <li><%= isNaN(releaseDate) ? releaseDate : $.format.date(new Date(Number(releaseDate)), 'MMMM yyyy') %></li>
                 <li><% _.each( keywords, function( keyobj ) {%> <%= keyobj.keyword %><% } ); %></li>
             </ul>
-
+            <button class="edit">Edit</button>
             <button class="delete">Delete</button>
         </script>
         <script src="js/lib/jquery-1.9.0.js"></script>
