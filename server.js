@@ -1,12 +1,5 @@
 'use strict';
 
-var mongostr = "mongodb://heroku_app28799790:3msv8i2c579t9l00jh61lui5jd@ds063899.mongolab.com:63899/heroku_app28799790";
-var localstr = "mongodb://localhost/node-mongo-blog";
-
-var connect = require('connect');
-var mongo = require('mongodb');
-var database = null;
-
 // Module dependencies.
 var application_root = __dirname,
     express = require( 'express' ), //Web framework
