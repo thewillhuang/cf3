@@ -1,3 +1,5 @@
+'use strict';
+
 var mongostr = mongodb://heroku_app28799790:3msv8i2c579t9l00jh61lui5jd@ds063899.mongolab.com:63899/heroku_app28799790
 var localstr = "mongodb://localhost/node-mongo-blog";
 
