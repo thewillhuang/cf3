@@ -1,4 +1,23 @@
-'use strict';
+var mongostr = mongodb://heroku_app28799790:3msv8i2c579t9l00jh61lui5jd@ds063899.mongolab.com:63899/heroku_app28799790
+var localstr = "mongodb://localhost/node-mongo-blog";
+
+var connect = require('connect');
+var mongo = require('mongodb');
+var database = null;
+
+ArticleProvider = function() {
+
+mongo.connect(mongostr, {}, function(error, db){
+console.log("connected, db: " + db);
+
+database = db;
+
+database.addListener("error", function(error){
+console.log("Error connecting to MongoLab");
+
+});
+});
+};
 
 // Module dependencies.
 var application_root = __dirname,
