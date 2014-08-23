@@ -7,20 +7,6 @@ var connect = require('connect');
 var mongo = require('mongodb');
 var database = null;
 
-ArticleProvider = function() {
-
-mongo.connect(mongostr, {}, function(error, db){
-console.log("connected, db: " + db);
-
-database = db;
-
-database.addListener("error", function(error){
-console.log("Error connecting to MongoLab");
-
-});
-});
-};
-
 // Module dependencies.
 var application_root = __dirname,
     express = require( 'express' ), //Web framework
